@@ -3,10 +3,7 @@
 #
 # find extended, high, low, lock, and unlock bits on hardware.txt
 OPTS="-c stk500v2 -p m328p -P /dev/ttyACM0"
-HEX="atmega/ATmegaBOOT_168_atmega328_pro_8MHz.hex"
-HEX="optiboot/optiboot_atmega328_pro_8MHz.hex"
-HEX="HEX_COPY.hex"
-# HEX="Album.cpp.hex"
+HEX="optiboot_atmega328.hex"
 
 avrdude $OPTS -e
 # avrdude $OPTS -U efuse:w:0x05:m
